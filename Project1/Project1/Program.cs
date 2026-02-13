@@ -30,7 +30,7 @@ namespace Project1
             {
                 if (montant > 0)
                 {
-                    if (modeAdmin == true)
+                    if (modeAdmin) // correction 1
                     {
                         if (password == "admin123")
                         {
