@@ -11,11 +11,31 @@ namespace Project1
         static void Main(string[] args)
         {
             string n = "test";
+            
+            
             int m = 500;
             List<string> c = new List<string>();
             List<int> p = new List<int>();
             string password = "admin123";
             TraiterCommandeComplexe(n, m, c, p, true, password);
+            {
+                Console.WriteLine("Entrez un nombre : ");
+                int i = int.Parse(Console.ReadLine());
+
+                if (i == 0)
+                {
+                    Console.WriteLine("Division impossible");
+                }
+                else
+                {
+                    Console.WriteLine(10 / i);
+                }
+
+                string pwd = "admin123";
+                 
+                Console.WriteLine("Mot de passe : " + password);
+                
+            }
         }
 
         static void TraiterCommandeComplexe(
@@ -32,6 +52,7 @@ namespace Project1
                 {
                     if (modeAdmin) // correction 1
                     {
+                        return;
                         if (password == "admin123")
                         {
                             if (montant < 10000)
