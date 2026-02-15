@@ -15,6 +15,7 @@ namespace Project1
             // autecommentaire
             // correction du 15/02
             // autretest
+            // correction effectuées def1 + def2
             
             int m = 500;
             List<string> c = new List<string>();
